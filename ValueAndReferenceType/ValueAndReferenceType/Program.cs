@@ -11,7 +11,7 @@ namespace ValueAndReferenceType
 		static void Main(string[] args)
 		{
 			// In order to make this work we must do the same thing for both Class and Struct
-			// See below	
+			// See below
 
 			// 1. Create a class and assign some values to it
 			PersonClass personClass = new PersonClass { GivenName = "Joe", Surname = "Class" };
@@ -32,16 +32,16 @@ namespace ValueAndReferenceType
 
 			// personClass: Paul Class
 			Console.WriteLine(string.Format("personClass: {0}", personClass.FullName));
-			
+
 			// newPersonClass: Paul Class
 			Console.WriteLine(string.Format("newPersonClass: {0}", newPersonClass.FullName));
-			
+
 			// personStruct: Jane Struct
 			Console.WriteLine(string.Format("personStruct: {0}", personStruct.FullName));
-			
+
 			// newPersonStruct: Mary Struct
 			Console.WriteLine(string.Format("newPersonStruct: {0}", newPersonStruct.FullName));
-			
+
 			Console.ReadLine();
 		}
 	}
